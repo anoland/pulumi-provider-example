@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"os"
 
-	xyz "github.com/pulumi/pulumi-provider-boilerplate/provider"
+	provider "github.com/anoland/pulumi-provider-example/provider"
 )
 
 // Serve the provider against Pulumi's Provider protocol.
 func main() {
-	err := xyz.Provider().Run(context.Background(), xyz.Name, xyz.Version)
+	err := provider.Provider().Run(context.Background(), provider.Name, provider.Version)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %s", err.Error())
 		os.Exit(1)

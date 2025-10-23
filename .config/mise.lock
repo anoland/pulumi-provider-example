@@ -69,7 +69,7 @@ version = "3.175.0"
 backend = "aqua:pulumi/pulumi"
 
 [tools.pulumi.platforms.linux-x64]
-checksum = "sha512:72bd9e201c81554ebf1edc72dc216a912d2c762d474a4c5d7ac0cbf896b7671bb065d7a8202006ef1bddd2f8b9c30cc541d8e3ca5c5d15d636bbabcd2c858664"
+checksum = "sha512:72bd9e201c81554ebf1edc72dc216a912d2c762d474a4c5d7ac0cbf896b7671bb065d7a8202006ef1bddd2f8b9c30cc541d8e3ca5c5d15d636bbanolandd2c858664"
 size = 91289993
 url = "https://github.com/pulumi/pulumi/releases/download/v3.175.0/pulumi-v3.175.0-linux-x64.tar.gz"
 

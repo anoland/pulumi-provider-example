@@ -1,4 +1,4 @@
-module github.com/pulumi/pulumi-provider-boilerplate
+module github.com/anoland/pulumi-provider-example
 
 go 1.24
 

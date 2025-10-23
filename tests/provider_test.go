@@ -22,9 +22,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	pulumi_provider_example "github.com/anoland/pulumi-provider-example/provider"
 	p "github.com/pulumi/pulumi-go-provider"
 	"github.com/pulumi/pulumi-go-provider/integration"
-	xyz "github.com/pulumi/pulumi-provider-boilerplate/provider"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/resource"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/tokens"
 	"github.com/pulumi/pulumi/sdk/v3/go/property"
@@ -59,9 +59,9 @@ func urn(typ string) resource.URN {
 func provider(t *testing.T) integration.Server {
 	s, err := integration.NewServer(
 		context.Background(),
-		xyz.Name,
+		pulumi_provider_example.Name,
 		semver.MustParse("1.0.0"),
-		integration.WithProvider(xyz.Provider()),
+		integration.WithProvider(pulumi_provider_example.Provider()),
 	)
 	require.NoError(t, err)
 	return s

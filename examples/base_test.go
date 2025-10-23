@@ -1,9 +1,9 @@
 package examples
 
 import (
+	"github.com/anoland/pulumi-provider-example/provider"
 	"github.com/pulumi/providertest/providers"
 	goprovider "github.com/pulumi/pulumi-go-provider"
-	"github.com/pulumi/pulumi-provider-boilerplate/provider"
 	pulumirpc "github.com/pulumi/pulumi/sdk/v3/proto/go"
 )
 
